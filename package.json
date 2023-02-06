@@ -1,0 +1,51 @@
+{
+	"name": "partywire",
+	"version": "0.0.1",
+	"description": "realtime party relay",
+	"main": "src/index.ts",
+	"author": "Dom Mandy",
+	"displayName": "partywire",
+	"keywords": [],
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/domrally/partywire.git"
+	},
+	"type": "module",
+	"scripts": {
+		"stop": "npx pm2 stopall",
+		"restart": "npx pm2 start npm start",
+		"start": "node --no-warnings --experimental-modules --loader ts-node/esm --inspect --experimental-specifier-resolution=node",
+		"test": "npx ts-node src/tests && npx eslint && npx prettier --check .",
+		"fix": "npm update && npx eslint --fix && npx prettier --write ."
+	},
+	"dependencies": {
+		"@fastify/static": "*",
+		"chalk": "^5.2.0",
+		"colorjs.io": "*",
+		"dotenv": "*",
+		"fastify": "*",
+		"inquirer": "*",
+		"log-update": "^5.0.1",
+		"peekeasy": "*",
+		"prismjs": "*",
+		"rxjs": "^7.8.0"
+	},
+	"devDependencies": {
+		"@tsconfig/node18-strictest": "^1.0.0",
+		"@types/figlet": "*",
+		"@types/inquirer": "^9.0.3",
+		"@types/node": "*",
+		"@typescript-eslint/eslint-plugin": "*",
+		"@typescript-eslint/parser": "*",
+		"ansi-colors": "^4.1.3",
+		"culori": "*",
+		"eslint": "*",
+		"eslint-config-alloy": "*",
+		"eslint-config-prettier": "*",
+		"figlet": "*",
+		"prettier": "*",
+		"ts-node": "*",
+		"typescript": "*"
+	}
+}

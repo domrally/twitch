@@ -1,0 +1,15 @@
+{
+	"extends": ["alloy", "alloy/typescript", "prettier"],
+	"rules": {
+		"@typescript-eslint/explicit-member-accessibility": "off",
+		"@typescript-eslint/method-signature-style": ["error", "method"],
+		"@typescript-eslint/prefer-function-type": "off",
+		"max-classes-per-file": ["error", 1],
+		"max-params": ["error", 4],
+		"no-constructor-return": "off",
+		"no-return-assign": ["error", "except-parens"],
+		"object-shorthand": ["error", "always"],
+		"one-var": ["error", "consecutive"],
+		"radix": ["error", "as-needed"]
+	}
+}
